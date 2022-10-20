@@ -1,0 +1,23 @@
+package edu.avo.hillel_j2ee_hw_07.dto;
+
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+import javax.validation.constraints.NotBlank;
+
+@Getter
+@Setter
+@RequiredArgsConstructor
+public class ShopDTO {
+
+    private Integer id;
+
+    @NotBlank
+    private String name;
+    @NotBlank
+    private String webSite;
+    @NotBlank
+    private String phoneNumber;
+
+}
